@@ -3,81 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <title>Remembering 1994</title>
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Remembering 1994</h1>
-        <p>In memory of the victims of the Genocide against the Tutsi</p>
-    </header>
+<header>
+    <h1>Remembering 1994</h1>
+    <p>In memory of the victims of the Genocide against the Tutsi</p>
+</header>
 
-    <section class="intro">
-        <p>
-            This website is created in remembrance of the lives lost during the 1994 tragedy.
-            It is a space to reflect, to honor, and to remember the importance of unity and humanity.
-        </p>
-    </section>
+<section class="intro">
+    <img src="https://pbs.twimg.com/media/HFQYHoNakAA-748.jpg" alt="Remembrance">
+    <p>
+        This space is created to remember and honor the lives lost in 1994,
+        and to reflect on unity, humanity, and remembrance.
+    </p>
+</section>
 
-    <section class="about">
-        <h2>What Happened</h2>
-        <p>
-            In 1994, Rwanda experienced one of the darkest moments in its history.
-            Over a period of about 100 days, countless innocent lives were lost in the Genocide against the Tutsi.
-        </p>
-        <p>
-            This tragedy left a deep impact on the nation and continues to remind the world
-            of the importance of peace, unity, and remembrance.
-        </p>
-    </section>
+<section class="about">
+    <h2>What Happened</h2>
+    <p>
+        In 1994, Rwanda experienced one of the darkest moments in its history.
+        Over 100 days, many innocent lives were lost.
+    </p>
+</section>
 
-    <section class="timeline">
-        <h2>1994 Timeline</h2>
+<section class="timeline">
+    <h2>1994 Timeline</h2>
 
-        <div class="month">
+    <!-- Radio Buttons -->
+    <input type="radio" name="slider" id="april" checked>
+    <input type="radio" name="slider" id="may">
+    <input type="radio" name="slider" id="june">
+    <input type="radio" name="slider" id="july">
+
+    <div class="cards">
+
+        <div class="card april">
             <h3>April 1994</h3>
-            <p>
-                The genocide began in April following the plane crash of President Habyarimana.
-                Violence quickly spread across the country.
-            </p>
+            <p>The violence began and quickly spread across the country.</p>
         </div>
 
-        <div class="month">
+        <div class="card may">
             <h3>May 1994</h3>
-            <p>
-                The killings intensified, affecting many communities while the world watched
-                with limited intervention.
-            </p>
+            <p>The killings intensified, affecting many communities.</p>
         </div>
 
-        <div class="month">
+        <div class="card june">
             <h3>June 1994</h3>
-            <p>
-                The situation remained severe as violence continued, and efforts to stop it
-                were still not enough.
-            </p>
+            <p>The situation remained severe as efforts to stop it continued.</p>
         </div>
 
-        <div class="month">
+        <div class="card july">
             <h3>July 1994</h3>
-            <p>
-                The genocide came to an end as the country began the long journey toward healing
-                and rebuilding.
-            </p>
+            <p>The genocide came to an end and the country began healing.</p>
         </div>
 
-    </section>
+    </div>
 
-    <section class="reflection">
-        <h2>Reflection</h2>
-        <p>
-            Remembering helps us learn from the past. Together, we say: Never Again.
-        </p>
-    </section>
+    <!-- Navigation -->
+    <div class="controls">
+        <label for="april">April</label>
+        <label for="may">May</label>
+        <label for="june">June</label>
+        <label for="july">July</label>
+    </div>
 
-    <footer>
-        <p>Kwibuka – We Remember</p>
-    </footer>
+</section>
+
+<section class="reflection">
+    <h2>Reflection</h2>
+    <p>Remembering helps us learn from the past. Never Again.</p>
+</section>
+
+<footer>
+    <p>Kwibuka – We Remember</p>
+</footer>
 
 </body>
 </html>
