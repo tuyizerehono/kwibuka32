@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
+    <!-- Responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Remembering 1994</title>
 
-    <!-- Font -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+
+<body id="top">
 
 <header>
     <h1>Remembering 1994</h1>
@@ -19,60 +24,62 @@
 <section class="intro">
     <img src="https://pbs.twimg.com/media/HFQYHoNakAA-748.jpg" alt="Remembrance">
     <p>
-        This space is created to remember and honor the lives lost in 1994,
-        and to reflect on unity, humanity, and remembrance.
+        This space exists to remember the lives lost, to reflect quietly,
+        and to hold onto the importance of unity and humanity.
     </p>
 </section>
 
 <section class="about">
     <h2>What Happened</h2>
     <p>
-        In 1994, Rwanda experienced one of the darkest moments in its history.
-        Over 100 days, many innocent lives were lost.
+        In 1994, Rwanda went through one of the darkest periods in its history.
+        Over 100 days, countless innocent lives were lost. Remembering this history
+        is part of ensuring it is never forgotten.
     </p>
 </section>
 
 <section class="timeline">
     <h2>1994 Timeline</h2>
 
-    <!-- Radio Buttons -->
-    <input type="radio" name="slider" id="april" checked>
-    <input type="radio" name="slider" id="may">
-    <input type="radio" name="slider" id="june">
-    <input type="radio" name="slider" id="july">
+    <div class="slider">
 
-    <div class="cards">
-
-        <div class="card april">
+        <div class="card" id="april">
             <h3>April 1994</h3>
-            <p>The violence began and quickly spread across the country.</p>
+            <p>The violence began and spread rapidly across the country.</p>
+            <div class="nav">
+                <span></span>
+                <a href="#may">▶</a>
+            </div>
         </div>
 
-        <div class="card may">
+        <div class="card" id="may">
             <h3>May 1994</h3>
             <p>The killings intensified, affecting many communities.</p>
+            <div class="nav">
+                <a href="#april">◀</a>
+                <a href="#june">▶</a>
+            </div>
         </div>
 
-        <div class="card june">
+        <div class="card" id="june">
             <h3>June 1994</h3>
             <p>The situation remained severe as efforts to stop it continued.</p>
+            <div class="nav">
+                <a href="#may">◀</a>
+                <a href="#july">▶</a>
+            </div>
         </div>
 
-        <div class="card july">
+        <div class="card" id="july">
             <h3>July 1994</h3>
             <p>The genocide came to an end and the country began healing.</p>
+            <div class="nav">
+                <a href="#june">◀</a>
+                <span></span>
+            </div>
         </div>
 
     </div>
-
-    <!-- Navigation -->
-    <div class="controls">
-        <label for="april">April</label>
-        <label for="may">May</label>
-        <label for="june">June</label>
-        <label for="july">July</label>
-    </div>
-
 </section>
 
 <section class="reflection">
@@ -83,6 +90,9 @@
 <footer>
     <p>Kwibuka – We Remember</p>
 </footer>
+
+<!-- Back to top -->
+<a href="#top" class="top-btn">↑</a>
 
 </body>
 </html>
