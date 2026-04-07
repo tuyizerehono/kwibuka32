@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: #eee;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #222;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+header p {
+    margin-top: 10px;
+    color: #bbb;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+/* Timeline */
+.timeline {
+    border-left: 2px solid #555;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.month {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.month::before {
+    content: "";
+    position: absolute;
+    left: -11px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    background-color: #888;
+    border-radius: 50%;
+}
+
+.month h3 {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+/* Reflection */
+.reflection {
+    font-style: italic;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    padding: 15px;
+    font-size: 14px;
+    color: #aaa;
+}
